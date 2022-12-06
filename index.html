@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/fonts.css">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" defer></script>
+
+    <script src="assets/js/gsap.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+<body>
+    <div class="stars-canvas"></div>
+    <div class="page">
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__link" href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#skills">Hard Skills</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+            <h2 class="header__title">Alvetron Page</h2>
+            <a class="scroll-down-item" href="#about"></a>
+            <span class="eye">
+                <span class="eye__inner"></span>
+            </span>
+        </header>
+        <main>
+            <div class="container">                
+                <section class="section about-me" id="about">
+                    <h2 class="section__title">About me</h2>
+                    <div class="about-me__row">
+                        <p class="about-me__text">Hello! I am Andrii, and i am front-end developer. This is my passions, i really like to create web sited and web apps. For this is like lego, in more, you have instructions (template), and you will create this by instructions. That's better than lego :).
+                            Hello! I am Andrii, and i am front-end developer. This is my passions, i really like to create web sited and web apps. For this is like lego, in more, you have instructions (template), and you will create this by instructions. That's better than lego :). I am spent a lot of time to improve myself in different branches. In last time i have spent a lot of time, to boost my english, to learn React framework. In general, i just do, what i like. I like to travel, and in last time, i visited few countries in Europe. A most impresive country was Switzerland. Every where you got, you see beautiful mountains. At the moment, i am in Poland and here i finding a job. At the work for me is important athmosphere, envoirment, communcation.  </p>
+                        <figure class="about-me__pictures">
+                            <p>In future there will be my photo, but now i have't any  normal photo :( </p>
+                        </figure>
+                    </div>                
+                </section>
+                <section class="section" id="skills">
+                    <h2 class="section__title about-me__title">Hard skills</h2>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <a href="https://www.w3schools.com/html/" class="skills__link" target="_blank">
+                                <img class="skills__img" src="assets/images/tech_logos/html.png" alt="HTML">
+                            </a>
+                        </li>
+                        <li class="skills__item">
+                            <a href="https://www.w3schools.com/css/default.asp" class="skills__link" target="_blank">
+                                <img class="skills__img" src="assets/images/tech_logos/css.png" alt="CSS">
+                            </a>
+                        </li>
+                        <li class="skills__item">
+                            <a href="https://www.w3schools.com/js/default.asp" class="skills__link" target="_blank">
+                                <img class="skills__img" src="assets/images/tech_logos/js.png" alt="JS">
+                            </a>
+                        </li>
+                        <li class="skills__item">
+                            <a href="https://sass-lang.com/" class="skills__link" target="_blank">
+                                <img class="skills__img" src="assets/images/tech_logos/sass.png" alt="SASS">
+                            </a>
+                        </li>
+                        <li class="skills__item">
+                            <a href="https://gulpjs.com/" class="skills__link" target="_blank">
+                                <img class="skills__img" src="assets/images/tech_logos/gulp.png" alt="SASS">
+                            </a>
+                        </li>
+                        <li class="skills__item">
+                            <a href="https://tailwindcss.com/" class="skills__link" target="_blank">
+                                <img class="skills__img" src="assets/images/tech_logos/tailwind.png" alt="tailwind">
+                            </a>
+                        </li>
+                        <li class="skills__item">
+                            <a href="https://pl.reactjs.org/" class="skills__link" target="_blank">
+                                <img class="skills__img skills__img--react" src="assets/images/tech_logos/react.png" alt="React">
+                            </a>
+                        </li>
+                    </ul>        
+                </section>
+                <section class="section section-portfolio" id="portfolio">
+                    <h2 class="section__title">Portfolio</h2>
+                    <ul class="portfolio__list">
+                        <li class="portfolio__item">
+                            <a href="https://alvetron.github.io/barbershop-site/" class="portfolio__link" target="_blank">
+                                <figure class="portfolio__imgs">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/barbershop/screen-1.png" alt="Web page screenshot #1">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/barbershop/screen-2.png" alt="Web page screenshot #1">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/barbershop/screen-3.png" alt="Web page screenshot #1">
+                                </figure>
+                                <h4 class="portfolio__title">Barbershop (mobile first)</h4>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a href="https://alvetron.github.io/mobile-first-site/" class="portfolio__link" target="_blank">
+                                <figure class="portfolio__imgs">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/DiGi-site/screen-1.png" alt="Web page screenshot #1">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/DiGi-site/screen-2.png" alt="Web page screenshot #2">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/DiGi-site/screen-3.png" alt="Web page screenshot #3">
+                                </figure>
+                                <h4 class="portfolio__title">DiGi (mobile first)</h4>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a href="https://alvetron.github.io/dota2-heroes-sounds/" class="portfolio__link" target="_blank">
+                                <figure class="portfolio__imgs">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/dota-heroes/dota-heroes-1.png" alt="Web page screenshot #1">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/dota-heroes/dota-heroes-2.png" alt="Web page screenshot #2">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/dota-heroes/dota-heroes-3.png" alt="Web page screenshot #3">
+                                </figure>
+                                <h4 class="portfolio__title">Dota 2 Heroes Sounds</h4>
+                            </a>
+                        </li>
+                        <li class="portfolio__item">
+                            <a href="https://alvetron.github.io/anime-app/" class="portfolio__link" target="_blank">
+                                <figure class="portfolio__imgs">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/anime-app/screen-1.png" alt="Web page screenshot #1">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/anime-app/screen-2.png" alt="Web page screenshot #2">
+                                    <img class="portfolio__img" src="assets/images/portfolio_imgs/anime-app/screen-3.png" alt="Web page screenshot #3">
+                                </figure>
+                                <h4 class="portfolio__title">NyaAnime</h4>
+                            </a>
+                        </li>
+                    </ul>        
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__item">
+                    <h4 class="footer__title">Contacts</h4>
+                    <ul class="contact-list">
+                        <li class="contact-list__item">
+                            <a class="contact-list__link" href="tel:+48570102380">+48 570 102 380</a>
+                        </li>
+                        <li class="contact-list__item">
+                            <a class="contact-list__link" href="mailto:thesparkylegendary@gmail.com">thesparkylegendary@gmail.com</a>
+                        </li>
+                        <li class="contact-list__item">
+                            <a class="contact-list__link" href="mailto:andriikyryliuk@int.pl">andriikyryliuk@int.pl</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title">Socials</h4>
+                    <ul class="socials-list">
+                        <li class="socials__item">
+                            <a class="socials__link" href="https://t.me/Andrii_Lalo" target="_blank">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="https://github.com/Alvetron" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="https://join.skype.com/invite/Bi4zF6Uti8uc" target="_blank">
+                                <i class="fa-brands fa-skype"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="developed">
+                    Created By <a class="developed__link" href="#about">Me</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
