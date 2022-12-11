@@ -32,7 +32,6 @@ const eye = document.querySelector('.eye');
 const eyeInner = document.querySelector('.eye__inner');
 
 document.addEventListener('mousemove', e => {
-    console.log(e)
     if(e.target.classList.contains('eye')) return false;
 
     const mouseX = e.clientX;
